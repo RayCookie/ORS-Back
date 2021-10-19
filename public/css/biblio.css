@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: muli;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  position: relative;
+  min-height: 150vh;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.search {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+#search {
+  border: none;
+  background: transparent;
+  position: absolute;
+  margin-top: 5.5vh;
+  margin-left: 25vw;
+}
+#search img {
+  height: 18px;
+  width: 18px;
+}
+#search img:hover {
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7vh;
+  margin-left: 2vw;
+}
+.bar label {
+  width: 70%;
+  margin-bottom: 2vh;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#sbar {
+  width: 50%;
+  border: 2px solid;
+  height: 4vh;
+  border-radius: 4px;
+  border-color: #14acb7;
+  color: black;
+  position: relative;
+}
+::placeholder {
+  font-size: 1rem;
+  padding-top: 1px;
+  padding-left: 10px;
+  opacity: 0.5;
+}
+input:focus {
+  outline: #14acb7;
+  border-width: 1.5px;
+}
+input:hover {
+  border-color: rgb(91, 91, 185);
+}
+input[type="text"] {
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+.checks {
+  width: 100%;
+  display: flex;
+  margin-top: 4vh;
+  margin-left: 2vw;
+  margin-bottom: 6vh;
+}
+#sort {
+  margin-right: 3vw;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+label {
+  font-weight: 600;
+}
+.checks input {
+  margin: 0 1vw 0 1.5vw;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  height: 15vh;
+}
+#rect {
+  width: 100%;
+  margin-bottom: 0;
+}
+.memoire {
+  display: flex;
+  margin-top: 4vh;
+  margin-left: 3vw;
+  margin-bottom: 3vh;
+}
+.memoire h5 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 58%;
+}
+.memoire img {
+  margin-left: 0vw;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+.memoire a {
+  color: #14acb7;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right: 3vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.memoire button {
+  background-color: #14acb7;
+  color: white;
+  width: 6vw;
+  height: 4vh;
+  text-align: center;
+  margin-left: 3vw;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.rect1 {
+  margin-top: 6vh;
+}
+.rect1 img {
+  width: 100%;
+}
+.reserv {
+  position: sticky;
+  top: 20vh;
+  border-radius: 46px;
+  height: fit-content;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin: 0vh 5vw 2vh 5vw;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  background-color: white;
+}
+.reserv h5 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.nores {
+  margin-top: 2vh;
+}
+.nores h1 {
+  font-size: 0.95rem;
+  margin-top: 0vh;
+  margin-bottom: 3vh;
+  font-weight: 600;
+}
+.newdiv {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 3vh;
+  font-size: small;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1vh;
+  height: 5vh;
+}
+.title h5 {
+  font-size: 0.9rem;
+  margin-left: 1vw;
+}
+.soustitre {
+  font-size: small;
+}
+.btn {
+  width: 1vw;
+  height: 1vh;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 3vh 0vh 0;
+  margin-top: 2vh;
+}
+.soustitre {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+.soustitre h5 {
+  color: #f7a92f;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-left: 1vw;
+  margin-bottom: 3vh;
+  font-size: 0.9rem;
+}
+.soustitre h4 {
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  position: sticky;
+  top: 10vh;
+  max-height: 250vh;
+}
+.submit {
+  background-color: #14acb7;
+  border-radius: 3px;
+  border: none;
+  height: 5vh;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+.submit h5 {
+  font-size: 0.6rem;
+  color: white;
+  word-spacing: 2px;
+}
+.navi {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  height: 13px;
+  display: flex;
+}
+.navi h1 {
+  font-size: 1rem;
+  margin: 0px 5px 0px 5px;
+}
+.navi a {
+  width: 9px;
+}
+.eh {
+  display: flex;
+  height: 120vh;
+}
+.first {
+  width: 55%;
+  margin-right: 5vw;
+}
+.stick {
+  position: fixed;
+}

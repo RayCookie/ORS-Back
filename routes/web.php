@@ -40,7 +40,7 @@ Route::group(array('before' => 'guest'), function() {
 	});
 
 	// Sign in (GET)
-	Route::get('/', array(
+	Route::get('/admin', array(
 		'as' 	=> 'account-sign-in',
 		'uses'	=> 'AccountController@getSignIn'
 	));
@@ -62,6 +62,52 @@ Route::group(array('before' => 'guest'), function() {
         'as' => 'search-book',
         'uses' => 'BooksController@searchBook'
     ));
+
+    Route::get('/nav', function () {
+        return view('nav');
+    });
+
+
+    //guest biblio
+    Route::get('/biblio', array(
+        'as' => 'biblio',
+        'uses' => 'BooksController@guestIndex'
+	));
+
+    Route::get('/contactus', function () {
+        return view('guest.Contactus');
+    });
+    Route::get('/contactus2', function () {
+        return view('guest.Contactus2');
+    });
+    Route::get('/checkout', function () {
+        return view('guest.Checkout');
+    });
+    Route::get('/aboutus', function () {
+        return view('guest.AboutUs');
+    });
+    Route::get('/', function () {
+        return view('Acceuil');
+    });
+
+    Route::get('/events', function () {
+        return view('guest.events');
+    });
+
+
+    Route::get('/blog', array(
+        'as' => 'blog',
+        'uses' => 'PostController@index'
+	));
+
+    Route::get('/evenement', array(
+        'as' => 'evenement',
+        'uses' => 'EventController@index'
+	));
+
+    Route::get('/connexion', function () {
+        return view('Login');
+    });
 
 });
 
@@ -164,10 +210,18 @@ Route::group(['middleware' => ['auth']] , function() {
     Route::post('/post/update/{post_id}', 'PostController@update')->name('update_post');
     Route::delete('/post/delete/{post_id}', 'PostController@destroy')->name('destroy_post');
 
+    //event routes
+    Route::get('/events', 'EventController@index')->name('all_events');
+    Route::get('/event/create', 'EventController@create')->name('create_event');
+    Route::post('/event/store', 'EventController@store')->name('store_new_event');
+    Route::get('/event/edit/{event_id}', 'EventController@edit')->name('edit_event');
+    Route::post('/event/update/{event_id}', 'EventController@update')->name('update_event');
+    Route::delete('/event/delete/{event_id}', 'EventController@destroy')->name('destroy_event');
 
     //image gaSllery routes
     Route::get('image-gallery', 'ImageGalleryController@index')->name('image');
     Route::post('image-gallery', 'ImageGalleryController@upload');
     Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
+
 
 });

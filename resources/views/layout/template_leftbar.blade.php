@@ -52,6 +52,12 @@
             </li>
 
             <li>
+                <a href="{{ route('all_events') }}">
+                    <i class="menu-icon icon-signout"></i>Evenements
+                </a>
+            </li>
+
+            <li>
                 <a href="{{ route('image') }}">
                     <i class="menu-icon icon-signout"></i>Gallerie
                 </a>

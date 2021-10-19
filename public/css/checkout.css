@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: muli;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  min-height: 90vh;
+  width: 90%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.texte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 9vh;
+  margin-bottom: 5vh;
+}
+.texte h5 {
+  margin-bottom: 4vh;
+  font-size: 2.6rem;
+  color: #14acb7;
+}
+.texte p {
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.infos {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.form {
+  background-color: white;
+  margin-right: 3vw;
+  margin-left: 8vw;
+  margin-top: 10vh;
+  height: 80vh;
+  width: 40vw;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 46px;
+}
+.reserv {
+  margin-top: 10vh;
+  margin-left: 8vw;
+  background-color: white;
+  height: 80vh;
+  width: 40vw;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 46px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 0 0 2vw;
+  width: 90%;
+}
+.name label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 2vh 0;
+}
+input {
+  border: 2px solid;
+  height: 6vh;
+  border-radius: 4px;
+  border-color: #14acb7;
+  color: black;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 0 0 2vw;
+  width: 90%;
+}
+.email label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 2vh 0;
+}
+::placeholder {
+  font-size: 1rem;
+  padding-top: 1px;
+  padding-left: 10px;
+  opacity: 0.5;
+}
+input[type="text"] {
+  font-size: 24px;
+  padding-left: 7px;
+}
+input[type="email"] {
+  font-size: 24px;
+  padding-left: 7px;
+}
+input:hover {
+  border-color: rgb(91, 91, 185);
+}
+input:focus {
+  outline: #2c66e2;
+  border-width: 2px;
+}
+.fonction {
+  display: flex;
+  height: 20vh;
+  margin: 5vh 0 0 2vw;
+}
+.left {
+  height: 100%;
+  width: 18vw;
+}
+.left h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 2vh 0;
+}
+.etud {
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+}
+.etud input {
+  margin-left: 7.5vw;
+}
+.prof {
+  display: flex;
+  align-items: center;
+}
+.prof input {
+  margin-left: 1vw;
+}
+.right {
+  height: 100%;
+  width: 18vw;
+}
+.employe {
+  display: flex;
+  margin-top: 7.5vh;
+  align-items: center;
+}
+.employe input {
+  margin-left: 5vw;
+}
+.autre {
+  display: flex;
+  align-items: center;
+}
+.autre input {
+  margin-left: 6.4vw;
+}
+.fonction label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.form button {
+  text-transform: uppercase;
+  height: 5vh;
+  width: 8vw;
+  margin: 7vh 0 0 15vw;
+  background-color: #14acb7;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.form button:hover {
+  cursor: pointer;
+}
+.get {
+  display: flex;
+  justify-content: space-between;
+}
+.get h5 {
+  margin: 5vh 0 0 2vw;
+  font-size: 1rem;
+}
+.get h4 {
+  margin: 5vh 2vw 0 0;
+}

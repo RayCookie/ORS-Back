@@ -6,3 +6,4 @@
 	<td><%= obj.category %></td>
 	<td><%= obj.avaliability %></td>
 </tr>
+

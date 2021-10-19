@@ -1,0 +1,147 @@
+@import url("https://use.typekit.net/dyy4rof.css");
+*{
+    font-family: muli;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.Contact{
+    position: relative;
+    width: 40%;
+    top:25%;
+    left: 4.9%;
+}
+.Contact h5{
+    font-family: muli;
+    position: relative;
+    color: #14ACB7;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 3rem;
+    padding-bottom: 6vh;
+}
+.Contact p{
+    color: #212121;
+    width:90%;
+    font-family: muli;
+    font-size: 1.4rem;
+}
+.confirm{
+        background-color: white;
+        box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 46px;
+        height: 350px;
+        width: 40%;
+        border-radius: 40px;
+        position: absolute;
+        margin-top: 0;
+        top: 30%;
+        left: 52%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+}
+.confirm h5{
+    font-family: muli;
+    font-size: 2.5rem;
+    position: relative;
+    white-space: pre;
+    overflow: hidden;
+    margin-top: 85px;
+
+}
+.confirm p{
+    margin-top: 10px;
+    font-family: muli;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 15%;
+    float: left;
+    margin-right: 15vw;
+}
+.arr1{
+    width: 1%;
+    margin-top:15px ;
+    margin-right: 1vw;
+    width:10px;
+    height: 20px;
+}
+.arr1 a img{
+    width:10%;
+    height: 10vh;
+} 
+.arr1 a img:hover{
+    height: 17px;
+}
+.text1{
+    position: relative;
+    top: 20%;
+    left: 0%;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 650;
+    color: #14ACB7;
+    text-transform: uppercase;
+}
+.nav1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 8%;
+    float: right;
+    margin-left: 16vw;
+}
+.arr2 {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    margin-top:0vw ;
+    margin-left: 1vw;
+    padding: 0;
+    width:10px;
+    height: 20px;
+}
+.arr2 a img{
+    width:10%;
+    height: 10vh;
+} 
+.text2{
+    position: relative;
+    top: 5%;
+    left: 0%;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 650;
+    color: #14ACB7;
+    text-transform: uppercase;
+}
+.arr1 img:hover{
+    margin-top: -2px;
+}
+.arr2 img:hover{
+    margin-top: -2px;
+}
+.text1:hover{
+    top: 16%;
+}
+.text2:hover{
+    top: 1%;
+}

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Blog;
-
+use Illuminate\Support\Facades\Auth;
 use App\Post;
 use Illuminate\Http\Request;
 
@@ -16,7 +16,10 @@ class PostController extends Controller
     public function index()
     {
         $posts = Blog::all();
-        return view('post_list',compact('posts'));
+    if (Auth::user()){
+        return view('post_list',compact('posts'));}
+        return view('guest.blog',compact('posts'));
+
     }
 
     /**

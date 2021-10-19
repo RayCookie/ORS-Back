@@ -32,14 +32,14 @@ class AccountController extends Controller
 				'username' => $request->get('username'),
 				'password' => $request->get('password')
 			), $remember);
-		} 
+		}
 
 		if($auth) {
-			
+
 			return Redirect::intended('home');
 
 		} else {
-			
+
 			return Redirect::route('account-sign-in')
 				->with('global', 'Wrong Email or Wrong Password.');
 		}
@@ -72,17 +72,17 @@ class AccountController extends Controller
 				'password' 	=> Hash::make($password)	// Changed the default column for Password
 			]);
 
-			if($userdata) {			
+			if($userdata) {
 
 
 				return Redirect::route('account-sign-in')
-					->with('global', 'Your account has been created. We have sent you an email to activate your account');				
+					->with('global', 'Your account has been created. We have sent you an email to activate your account');
 			}
 		}
 	}
 
 	public function getSignIn() {
-		return view('account.signin');
+		return view('Login');
 	}
 
 	/* Viewing the form (GET) */

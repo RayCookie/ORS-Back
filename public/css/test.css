@@ -1,0 +1,97 @@
+.slideshow-container {
+    max-width: 1150px;
+    min-width:1100px;
+    max-height: 500px;
+    min-height: 500px;
+    overflow:hidden;
+    background-size:cover;
+    position: relative;
+    margin: auto;
+    border-radius: 46px;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 22px;
+  width: 22px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index:1;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+/* Carousel Photos Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+<div class="mySlides fade">
+<img src="image/1.jpg" style="width:100%;">
+<div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+<img src="image/2.jpg" style="width:100%">
+</div>
+<div style="text-align:center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+ </div>
+
+
+
+ /*
+
+.btn1{
+
+    width: 70%;
+    height: 100px;
+    margin-top:25px;
+    margin-left: 15%;
+    display: block;
+    border-radius: 20px;
+    border: 1px black;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.0018em;
+    text-shadow: 3px 3px 5px #000000;
+    background: url('../image/1.jpg') ;
+    background-size:cover;
+    color: #FFFFFF;
+}
+
+
+}*/
